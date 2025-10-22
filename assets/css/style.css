@@ -1,0 +1,66 @@
+/* style.css - mobile first (EcoTrack) */
+
+/* Variables */
+:root{
+  --bg: #f7fbf7;
+  --card:#ffffff;
+  --accent:#2e7d32;
+  --muted:#6b7280;
+  --text:#111827;
+  --radius:10px;
+  --container:1000px;
+}
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Container */
+.container{max-width:var(--container);margin:0 auto;padding:1rem}
+
+/* Skip link */
+.skip-link{position:absolute;left:-999px}
+.skip-link:focus{position:static;background:#fff;padding:.5rem;border-radius:4px}
+
+/* Header */
+.site-header{background:var(--card);border-bottom:1px solid #e6e7eb}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.brand{display:flex;align-items:center;gap:.5rem}
+.logo{width:44px;height:44px;border-radius:8px;object-fit:cover}
+.site-title{color:var(--accent);font-weight:700}
+
+/* Nav */
+.site-nav .nav-list{display:flex;gap:1rem;list-style:none}
+.site-nav a{text-decoration:none;color:var(--muted)}
+
+/* Hero */
+.hero{padding:1.5rem 0;background:linear-gradient(135deg,#e6f4ea, #f7fbf7)}
+.hero-inner{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
+.hero-image{width:100%;max-height:220px;object-fit:contain;border-radius:8px}
+.hero-content h2{color:var(--accent);font-size:1.25rem}
+.hero-content p{color:var(--muted);margin:.5rem 0}
+
+/* Form */
+.section{padding:1.25rem 0}
+.form{max-width:640px;margin-top:.5rem}
+.form label{display:block;margin:.5rem 0 .2rem;font-weight:600}
+.form input{width:100%;padding:.6rem;border:1px solid #e6e7eb;border-radius:8px;background:var(--card)}
+.form-actions{margin-top:.75rem;display:flex;gap:.5rem}
+.btn{padding:.6rem .9rem;border-radius:8px;border:none;cursor:pointer;font-weight:700}
+.primary{background:var(--accent);color:white}
+.secondary{background:transparent;border:1px solid #e6e7eb}
+
+/* Results */
+.results{margin-top:1rem;background:#ffffff;padding:1rem;border-radius:8px;border:1px solid #e6f3ea}
+.form-message{margin-top:.5rem;color:#b91c1c}
+
+/* Footer */
+.site-footer{padding:1rem 0;background:transparent;border-top:1px solid #e6e7eb;margin-top:1rem;text-align:center;color:var(--muted)}
+

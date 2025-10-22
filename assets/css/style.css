@@ -64,3 +64,12 @@ body{
 /* Footer */
 .site-footer{padding:1rem 0;background:transparent;border-top:1px solid #e6e7eb;margin-top:1rem;text-align:center;color:var(--muted)}
 
+/* Responsive: tablets and up */
+@media(min-width:720px){
+  .hero-inner{grid-template-columns:45% 55%}
+  .site-nav .nav-list{gap:1.25rem}
+}
+@media(min-width:1024px){
+  html{font-size:18px}
+  .hero-content h2{font-size:1.75rem}
+}

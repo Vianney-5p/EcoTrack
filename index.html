@@ -32,7 +32,61 @@
     </div>
   </header>
 
- 
+  <main id="main" class="main" role="main">
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <img src="assets/images/hero-book-heart.png" class="hero-image" alt="">
+        <div class="hero-content">
+          <h2>Understand your daily carbon footprint</h2>
+          <p>Quickly estimate your impact and get simple suggestions to reduce it.</p>
+          <a class="btn primary" href="#tracker">Start Tracking</a>
+        </div>
+      </div>
+    </section>
+
+<section id="tracker" class="section tracker">
+      <div class="container">
+        <h3>Daily Activity Tracker</h3>
+        <form id="footprint-form" class="form" novalidate>
+          <label for="transport">Transport (km by car):</label>
+          <input id="transport" name="transport" type="number" min="0" placeholder="e.g. 20">
+
+          <label for="meals">Meat-based meals today:</label>
+          <input id="meals" name="meals" type="number" min="0" placeholder="e.g. 2">
+
+          <label for="electricity">Electricity (kWh):</label>
+          <input id="electricity" name="electricity" type="number" min="0" placeholder="e.g. 5">
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Calculate</button>
+            <button type="button" id="clear" class="btn secondary">Clear</button>
+          </div>
+
+          <div id="form-message" class="form-message" aria-live="polite"></div>
+        </form>
+
+        <div class="results" aria-live="polite">
+          <h4>Results</h4>
+          <p id="result-text">Fill in the form and press Calculate to see your estimated footprint.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h3>About</h3>
+        <p>EcoTrack is an educational tool to help users understand how everyday choices affect carbon emissions.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 EcoTrack — Built for learning & awareness.</p>
+      <p><a href="https://example.org/privacy" target="_blank" rel="noopener">Privacy</a></p>
+    </div>
+  </footer>
+  
   <script src="assets/js/app.js"></script>
   </body>
 </html>

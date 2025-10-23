@@ -39,7 +39,7 @@
       formMessage.textContent = '';
 
       const transport = parseFloat(document.getElementById('transport').value) || 0;
-      const meals = parseInt(document.getElementById('meals').value, 10) || 0;
+      const meals = parseFloat(document.getElementById('meals').value, 10) || 0;
       const energy = parseFloat(document.getElementById('electricity').value) || 0;
 
       const errors = validateInputs(transport, meals, energy);
